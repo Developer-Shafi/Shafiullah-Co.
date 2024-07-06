@@ -1,0 +1,350 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 0.3rem 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    width: 70px;
+    margin-left: 2rem;
+  }
+
+  header nav{
+    margin-right: 1.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: url('https://img.freepik.com/free-psd/modern-farmhouse-meadow-hill-generative-ai_587448-2226.jpg?t=st=1720003090~exp=1720006690~hmac=fada96e9f4d40d295a7327bf4e332502ca2fede1240a84575e8d84ed1effea2d&w=1380') no-repeat center center/cover;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:normal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #hero .hero-content {
+    max-width: 600px;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #hero .btn {
+    padding: 0.75rem 1.5rem;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #hero .btn:hover {
+    background: #d35400;
+  }
+  
+  /* About Us */
+  #about {
+    padding: 4rem 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  #about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+  }
+  
+  /* Housing Schemes */
+  #schemes {
+    padding: 4rem 0;
+    background: #f4f4f4;
+  }
+  
+  #schemes .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #schemes h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #schemes .scheme {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #schemes .scheme img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #schemes .scheme h3 {
+    font-size: 1.75rem;
+    margin: 1rem 0;
+  }
+  
+  #schemes .scheme p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #schemes .scheme .btn {
+    padding: 0.75rem 1.5rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #schemes .scheme .btn:hover {
+    background: #2980b9;
+  }
+   /* services */
+  #Services{
+    padding: 4rem 0;
+    background: #f4f4f4;
+  }
+
+  #Services .container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #Services h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #Services .services_container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and ( max-width: 750px) {
+    #Services .services_container{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+    }
+    
+  }
+ 
+  #Services .Service{
+    margin: 1rem;
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  #Services .Service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #Services .Service h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  #Services .Service p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #Services .Service .btn {
+    padding: 0.5rem 0.75rem;
+    background: #53baff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #Services .Service .btn:hover {
+    background: #2980b9;
+  }
+
+  
+  /* Testimonials */
+  #testimonials {
+    padding: 4rem 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  #testimonials .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #testimonials .testimonial {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #testimonials .testimonial p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #testimonials .testimonial cite {
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Contact Information */
+  #contact {
+    padding: 4rem 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  #contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    padding: 0.75rem;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #contact form button:hover {
+    background: #219150;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  footer p {
+    margin-bottom: 1rem;
+  }
+  
+  footer .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  footer .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
